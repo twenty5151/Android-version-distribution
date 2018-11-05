@@ -4,7 +4,7 @@ library(ggplot2)
 library(reshape2)
 library(ggpubr)
 
-percentage <- read.csv("C:/Users/Yuitere/Nextcloud/Maths/Android version distribution/percentages.csv")
+percentage <- read.csv("https://github.com/yc-tsui/Android-version-distribution/blob/master/percentages.csv")
 
 percentage.m <- melt(percentage, id="Month")
 
