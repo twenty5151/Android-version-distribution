@@ -2,7 +2,7 @@ library(ggplot2)
 library(reshape2)
 library(ggpubr)
 
-percentage <- read.csv("C:/Users/Yuitere/Downloads/percentages.csv")
+percentage <- read.csv("percentages.csv")
 
 attach(percentage)
 
@@ -42,16 +42,16 @@ final <- ggarrange(a.1, a.2, a.3, a.4, a.5, a.6, a.7, a.8, a.9, a.10, a.11, lege
 
 
 
-====
-This might be useful for splitting:
-ggplot(percentage.m, aes(x=Month, y=value, group=variable)) + geom_point(aes(color=variable),na.rm = TRUE, size=2)
+#====
+#This might be useful for splitting:
+#ggplot(percentage.m, aes(x=Month, y=value, group=variable)) + geom_point(aes(color=variable),na.rm = TRUE, size=2)
 
 
-remove x-axis by
-https://stackoverflow.com/questions/35090883/remove-all-of-x-axis-labels-in-ggplot#35090981
-        axis.ticks.x=element_blank())
+#remove x-axis by
+#https://stackoverflow.com/questions/35090883/remove-all-of-x-axis-labels-in-ggplot#35090981
+#        axis.ticks.x=element_blank())
 		
-====
+#====
 
 ps4.1 <- subset(percentage.o, variable == "X4.1")
 ps4.2 <- subset(percentage.o, variable == "X4.2")
@@ -79,4 +79,4 @@ geom_point(data=ps4.1, aes(Month, value, color='red'), alpha=1) +
 geom_line(data=ps4.1, aes(Month, value, color='red'), size=2, alpha=1) +
 theme(panel.background = element_rect(fill = 'white'), panel.grid.major = element_line(colour = "grey80"),panel.grid.minor = element_line(colour = "gray90"))
 
-====
+#====
