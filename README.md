@@ -4,4 +4,8 @@ The graphs around the internet doesn't adjust each version by its year of launch
 
 Source: androidpolice
 
+## Percentage of peak usage by time since launch
 ![image](julia.png)
+
+## Percentage change
+![percentage change](pchange.png)

@@ -56,7 +56,7 @@ rename!(df, :x11 => "9.0")
 # Remove NaN columns
 df = df[1:end-6]
 
-# Plot
+# Plot (for both julia and percentage change pngs)
 colors = [:aquamarine :red :brown :fuchsia :green3 :orange :pink :purple :violet :lime :deepskyblue]
 labels = ["4.1" "4.2" "4.3" "5.0" "5.1" "6.0" "7.0" "7.1" "8.0" "8.1" "9.0"]
 plots = []
